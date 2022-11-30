@@ -1,0 +1,191 @@
+body {
+  background-image: url("Obrazki/95468de196a0faa3ea7206d30586.jpeg");
+  background-size: cover;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-family: "Didot";
+  font-size: 70px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-family: "Didot";
+  font-size: 35px;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+  font-family: "Didot";
+  font-size: 30px;
+}
+
+h4 {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+
+h5 {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+}
+
+h6 {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+nav {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2cm;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  width: 55%;
+  justify-content: space-around;
+}
+
+li {
+  padding: 0 1rem;
+  font-family: "Didot";
+}
+
+a {
+  color: black;
+  text-align: -webkit-left;
+  text-decoration: none;
+  font-size: 1.7rem;
+  position: relative;
+  padding: .2em;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  botton: 0;
+  left: 0;
+  width: 10%;
+  height: .15em;
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+}
+
+a:hover::after{
+  width: 100%;
+
+}
+
+.burger {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+.burger-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 3em;
+  height: .3em;
+  margin: .7em;
+  border-radius: 20px;
+  transition: .3s ease-in-out;
+  background-color: black;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.displayblock {
+  display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+  .burger {
+    display: block;
+    transition: .3s ease-in-out;
+  }
+
+  .burger.active .line:first-child{
+    background-color: black;
+  }
+
+  .burger.active .line:nth-child(2){
+    transform: rotate(-405deg) translateY(8px);
+  }
+
+  .burger.active .line:nth-child(3){
+    transform: rotate(-320deg) translateY(-10px);
+  }
+
+
+  ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(100%);
+    transition: .3s ease-in-out;
+  }
+
+  li {
+    padding: 1rem;
+  }
+
+  ul.active {
+    transform: translate(0%);
+  }
+
+  a {
+    color: black;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  ul{
+    width: 100%;
+  }
+}
+
+button {
+  color: black;
+  align-items: center;
+  text-align: center;
+  border-style: none;
+  font-family: Didot;
+}
+
+img {
+  border:10px solid #000000;
+}
+
+

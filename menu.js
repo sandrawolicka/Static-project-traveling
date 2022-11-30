@@ -1,6 +1,7 @@
 const mobileNav = document.querySelector('ul');
 const burgerIcon = document.querySelector('.burger');
 
+
 let miniMenuShowed = false;
 
 burgerIcon.addEventListener('click', function(){
